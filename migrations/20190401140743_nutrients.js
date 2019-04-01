@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
         table.increments();
         table.string('name').notNullable('');
         table.string('units_of_measurement').notNullable('');
-        table.integer('daily_value').notNullable(0)
+        table.float('daily_value', 2).notNullable(0)
     })
 };
 
