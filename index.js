@@ -8,14 +8,14 @@ const knex = require('./knex');
 app.use(cors())
 app.use(parser.json())
 
-app.get('/foods', (req, res) => {
-    knex('foods')
-    .then((foods) => {
-      res.send(foods);
-    })
-    .catch((err) => {
-      next(err);
-    });
+app.get('/foods/:char', (req, res) => {
+  knex('foods').where('name', `${req.params.char}`)
+  .then((foods) => {
+    res.send(foods);
+  })
+  .catch((err) => {
+    next(err);
+  });
 })
 
 app.get('/nutrients', (req, res) => {
