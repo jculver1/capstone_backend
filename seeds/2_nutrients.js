@@ -6,17 +6,22 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('nutrients').insert([
         {
-          "name": "Vitamin C",
+            "name": "Vitamin A, IU",
+            "units_of_measurement": "International Unit (IU)",
+            "daily_value": "5000"
+        },
+        {
+          "name": "Vitamin C, total ascorbic acid",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "60"
       },
       {
-          "name": "Calcium",
+          "name": "Calcium, Ca",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "1000"
       },
       {
-          "name": "Iron",
+          "name": "Iron, Fe",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "18"
       },
@@ -26,12 +31,12 @@ exports.seed = function(knex, Promise) {
           "daily_value": "400"
       },
       {
-          "name": "Vitamin E",
+          "name": "Vitamin E (alpha-tocopherol)",
           "units_of_measurement": "International Unit (IU)",
           "daily_value": "30"
       },
       {
-          "name": "Vitamin K",
+          "name": "Vitamin K (phylloquinone)",
           "units_of_measurement": "micrograms (µg)",
           "daily_value": "80"
       },
@@ -51,17 +56,17 @@ exports.seed = function(knex, Promise) {
           "daily_value": "20"
       },
       {
-          "name": "Vitamin B6",
+          "name": "Vitamin B-6",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "2"
       },
       {
-          "name": "Folate",
+          "name": "Folate, total",
           "units_of_measurement": "micrograms (µg)",
           "daily_value": "400"
       },
       {
-          "name": "Vitamin B12",
+          "name": "Vitamin B-12",
           "units_of_measurement": "micrograms (µg)",
           "daily_value": "6"
       },
@@ -76,52 +81,52 @@ exports.seed = function(knex, Promise) {
           "daily_value": "10"
       },
       {
-          "name": "Phosphorus",
+          "name": "Phosphorus, P",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "1000"
       },
       {
-          "name": "Iodine",
+          "name": "Iodine, I",
           "units_of_measurement": "micrograms (µg)",
           "daily_value": "150"
       },
       {
-          "name": "Magnesium",
+          "name": "Magnesium, Mg",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "400"
       },
       {
-          "name": "Zinc",
+          "name": "Zinc, Zn",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "15"
       },
       {
-          "name": "Selenium",
+          "name": "Selenium, Se",
           "units_of_measurement": "micrograms (µg)",
           "daily_value": "70"
       },
       {
-          "name": "Copper",
+          "name": "Copper, Cu",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "2"
       },
       {
-          "name": "Manganese",
+          "name": "Manganese, Mn",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "2"
       },
       {
-          "name": "Chromium",
+          "name": "Chromium, Cr",
           "units_of_measurement": "micrograms (µg)",
           "daily_value": "120"
       },
       {
-          "name": "Molybdenum",
+          "name": "Molybdenum, Mo",
           "units_of_measurement": "micrograms (µg)",
           "daily_value": "75"
       },
       {
-          "name": "Chloride",
+          "name": "Chloride, Cl",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "3400"
       }

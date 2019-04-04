@@ -7,20 +7,24 @@ exports.seed = function(knex, Promise) {
       return knex('foods').insert([
           {
               "usda_id": "11739",
-              "name": "Broccoli"
+              "name": "broccoli"
           },
           {
               "usda_id": "11124",
-              "name": "Carrot"
+              "name": "carrot"
           },
           {
               "usda_id": "9040",
-              "name": "Banana"
+              "name": "banana"
           },
           {
               "usda_id": "9203",
-              "name": "Orange"
-          }
+              "name": "orange"
+          },
+          {
+            "usda_id": "14553",
+            "name": "wine"
+        }
       ]);
     });
 };
