@@ -129,7 +129,12 @@ exports.seed = function(knex, Promise) {
           "name": "Chloride, Cl",
           "units_of_measurement": "milligrams (mg)",
           "daily_value": "3400"
-      }
+      },
+      {
+        "name": "Potassium, K",
+        "units_of_measurement": "milligrams (mg)",
+        "daily_value": "3500"
+    }
       ]);
     });
 };
