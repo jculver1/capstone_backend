@@ -14,7 +14,7 @@ exports.seed = function(knex, Promise) {
               "name": "carrot"
           },
           {
-              "usda_id": "9040",
+              "usda_id": "09040",
               "name": "banana"
           },
           {
