@@ -24,6 +24,10 @@ exports.seed = function(knex, Promise) {
           {
             "usda_id": "14553",
             "name": "wine"
+        },
+        {
+          "usda_id": "09326",
+          "name": "watermelon"
         }
       ]);
     });
